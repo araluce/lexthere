@@ -26,8 +26,8 @@ class LawyerService
   SERVICE_URL = 'http://www.ecolegio.org'.freeze
   SERVICE_PATH = "/ecensofront/ws/censoletrados".freeze
 
-  def initialize(name, surnames)
-    @name, @surnames = name, surnames
+  def initialize(name, surnames, collegiate_number)
+    @name, @surnames, @collegiate_number = name, surnames, collegiate_number
   end
 
   def perform

@@ -16,7 +16,9 @@ ActiveRecord::Schema.define(version: 20190225082050) do
     t.string "name"
     t.string "surname"
     t.string "type"
-    t.boolean "exercising"
+    t.boolean "exercising", default: false, null: false
+    t.boolean "exercising_request", default: false, null: false
+    t.string "collegiate_number"
     t.string "email", default: "", null: false
     t.string "encrypted_password", default: "", null: false
     t.string "reset_password_token"
